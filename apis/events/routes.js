@@ -9,7 +9,7 @@ const {
 } = require("./controllers");
 
 router.get("/", fetchEvent);
-router.put("/", fetchOneEvent);
+router.get("/:id", fetchOneEvent);
 router.post("/", createEvent);
 
 router.delete("/:id", deleteEvent);
